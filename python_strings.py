@@ -3,15 +3,12 @@
 #   - my_first_name
 #       -set this equal to your first name
 my_first_name = 'Josh'
-
 #   - my_last_name
 #       -set this equal to your last name
 my_last_name = 'Poole'
-
 #   - my_year_of_birth
 #       -set this equal to your birth year (doesn't have to be real should be less then 100 yrs ago)
 my_birth_year = 1995
-
 #   - current_year
 #       -set this equal to 2020
 current_year = 2022
@@ -27,8 +24,12 @@ current_year = 2022
 #       - second letter of your last name (use the -index)
 #       - first two letter of your first name (use the +index)
 #       - second two letter of your last name (use the -index)
-
-
+print(my_first_name)
+print(my_last_name)
+print(my_first_name[0])
+print(my_last_name[-4])
+print(my_first_name[0:2])
+print(my_last_name[-2:])
 
 
 #TODO Combining Strings

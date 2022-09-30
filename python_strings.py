@@ -2,6 +2,9 @@
 #   - Create the following variables
 #   - my_first_name
 #       -set this equal to your first name
+from inspect import modulesbyfile
+
+
 my_first_name = 'Josh'
 #   - my_last_name
 #       -set this equal to your last name
@@ -24,19 +27,21 @@ current_year = 2022
 #       - second letter of your last name (use the -index)
 #       - first two letter of your first name (use the +index)
 #       - second two letter of your last name (use the -index)
-print(my_first_name)
-print(my_last_name)
-print(my_first_name[0])
-print(my_last_name[-4])
-print(my_first_name[0:2])
-print(my_last_name[-2:])
+# print(my_first_name)
+# print(my_last_name)
+# print(my_first_name[0])
+# print(my_last_name[-4])
+# print(my_first_name[0:2])
+# print(my_last_name[-2:])
 
 
 #TODO Combining Strings
 #   - Print the following items (one per line) (print using variables)
 #       -first name and last name combined
 #       -first name six times
-
+# print(my_first_name, my_last_name)
+# print(my_first_name * 6)
+# print((my_first_name + "\n") * 6)
 
 
 
@@ -45,6 +50,11 @@ print(my_last_name[-2:])
 #   - Print the following items (one per line) (print using variables)
 #       - first name last name -was born in- year of birth
 #       - first name last name -was born in- year of birth. first name -enjoyed celebrating- current year
+# birth_year_statement = "{} {} was born in {}"
+# print(birth_year_statement.format(my_first_name, my_last_name, my_birth_year))
+
+# celebration_statement = "{} {} was born in {}. {} enjoyed {}"
+# print(celebration_statement.format(my_first_name, my_last_name, my_birth_year, my_first_name, current_year))
 
 
 
@@ -52,6 +62,13 @@ print(my_last_name[-2:])
 #   - Print the following items (one per line) (print using variables)
 #       - possesive first name -birth year is- year of birth 
 #       - tab last name current year
+# print(my_first_name + "'s computer")
+# print(my_first_name + "'s", "birth year is", my_birth_year)
+# escape_example = "{}\'s birth year is {}"
+# print(escape_example.format(my_first_name, my_birth_year))
+
+# tab_escape = "\t{} {}"
+# print(tab_escape.format(my_last_name, current_year))
 
 
 # TODO String methods
@@ -59,3 +76,6 @@ print(my_last_name[-2:])
 #       - first name and last name in lower case
 #       - length of last name
 #       - first name and last name all in upper case
+print(my_first_name.casefold(), my_last_name.casefold())
+print(len(my_last_name))
+print(my_first_name.upper(), my_last_name.upper())
